@@ -1,38 +1,24 @@
-# create-svelte
+Projeto: Irís Cook
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Este projeto em Svelte, chamado "Irís Cook," é uma aplicação web voltada para a seleção de ingredientes para refeições e a busca de receitas com base nesses ingredientes. A aplicação oferece uma experiência simples e amigável para os usuários planejarem suas refeições de acordo com os ingredientes disponíveis em casa.
 
-## Creating a project
+Recursos Principais:
 
-If you're seeing this, you've probably already done this step. Congrats!
+Componentes Reutilizáveis: O projeto utiliza componentes Svelte reutilizáveis, como "Title," "Category," e "TagLink," para garantir a modularidade e facilitar a manutenção do código.
 
-```bash
-# create a new project in the current directory
-npm init svelte
+Integração de Dados: Os dados das categorias de ingredientes são importados a partir de um arquivo JSON externo, o que permite uma fácil atualização e expansão das opções de categorias.
 
-# create a new project in my-app
-npm init svelte my-app
-```
+Controle de Navegação: O projeto utiliza o recurso beforeNavigate para cancelar a navegação do usuário para a página de receitas se a lista de ingredientes estiver vazia, proporcionando uma experiência mais intuitiva.
 
-## Developing
+Estilo Responsivo: O design responsivo da aplicação garante que ela seja adequada para diferentes dispositivos e tamanhos de tela.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Instruções de Uso:
 
-```bash
-npm run dev
+Na página principal, os usuários podem selecionar ingredientes de diferentes categorias.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+Após a seleção dos ingredientes, eles podem clicar no botão "Buscar Receitas" para encontrar receitas com base nos ingredientes escolhidos.
 
-## Building
+Aviso Importante:
+Atenção: Consideramos que você tenha em casa: sal, pimenta e água.
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Este projeto demonstra a utilização do framework Svelte para criar uma aplicação web interativa e útil para planejar refeições. Sua estrutura organizada, componentes reutilizáveis e integração de dados tornam-no um exemplo sólido de desenvolvimento web com Svelte.
